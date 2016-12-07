@@ -2,438 +2,624 @@
 <html>
 
 <head>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-    <title>KHOI NGUYEN</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <style type="text/css">
-    @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+    <title>KHOI NGUYEN - CV</title>
+    <style>
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    nav,
+    section,
+    summary {
+        display: block
+    }
+
+    audio,
+    canvas,
+    video {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1
+    }
+
+    audio:not([controls]) {
+        display: none
+    }
+
+    [hidden] {
+        display: none
+    }
+
+    html {
+        font-size: 100%;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%
+    }
+
+    html,
+    button,
+    input,
+    select,
+    textarea {
+        font-family: sans-serif
+    }
+
     body {
-        background: #fff;
-        font-family: Lato, sans-serif;
-        margin: 0 0 80px;
+        margin: 0
     }
 
-    a {
-        color: #2ecc71;
+    a:focus {
+        outline: thin dotted
     }
 
-    a:focus,
-    a:hover {
-        color: #f1c40f;
-        text-decoration: none;
+    a:hover,
+    a:active {
+        outline: 0
     }
 
-    p {
-        line-height: 1.5;
-        margin: 0;
+    h1 {
+        font-size: 2em;
+        margin: .67em 0
     }
 
-    p+p {
-        margin-top: 10px;
+    h2 {
+        font-size: 1.5em;
+        margin: .83em 0
     }
 
-    h1,
-    h2,
-    h3,
+    h3 {
+        font-size: 1.17em;
+        margin: 1em 0
+    }
+
     h4 {
-        margin-top: 0
+        font-size: 1em;
+        margin: 1.33em 0
     }
 
-    section {
-        margin-top: 30px;
+    h5 {
+        font-size: .83em;
+        margin: 1.67em 0
     }
 
-    li {
-        line-height: 1.8;
-        list-style: none;
+    h6 {
+        font-size: .75em;
+        margin: 2.33em 0
     }
 
-    li:before {
-        content: "\f052";
-        float: left;
-        font: 13px Octicons;
-        margin-top: 6px;
-        margin-left: -20px;
-        opacity: .1;
-        position: absolute;
+    abbr[title] {
+        border-bottom: 1px dotted
+    }
+
+    b,
+    strong {
+        font-weight: bold
     }
 
     blockquote {
-        border-left: 5px solid #e7e9ec;
-        font-size: 14px;
+        margin: 1em 40px
+    }
+
+    dfn {
+        font-style: italic
+    }
+
+    mark {
+        background: #ff0;
+        color: #000
+    }
+
+    p,
+    pre {
+        margin: 1em 0
+    }
+
+    pre,
+    code,
+    kbd,
+    samp {
+        font-family: monospace, serif;
+        _font-family: 'courier new', monospace;
+        font-size: 1em
+    }
+
+    pre {
+        white-space: pre;
+        white-space: pre-wrap;
+        word-wrap: break-word
+    }
+
+    q {
+        quotes: none
+    }
+
+    q:before,
+    q:after {
+        content: '';
+        content: none
+    }
+
+    small {
+        font-size: 75%
+    }
+
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline
+    }
+
+    sup {
+        top: -0.5em
+    }
+
+    sub {
+        bottom: -0.25em
+    }
+
+    dl,
+    menu,
+    ol,
+    ul {
+        margin: 1em 0
+    }
+
+    dd {
+        margin: 0 0 0 40px
+    }
+
+    menu,
+    ol,
+    ul {
+        padding: 0 0 0 40px
+    }
+
+    nav ul,
+    nav ol {
+        list-style: none;
+        list-style-image: none
+    }
+
+    img {
+        border: 0;
+        -ms-interpolation-mode: bicubic
+    }
+
+    svg:not(:root) {
+        overflow: hidden
+    }
+
+    figure {
+        margin: 0
+    }
+
+    form {
+        margin: 0
+    }
+
+    fieldset {
+        border: 1px solid #c0c0c0;
+        margin: 0 2px;
+        padding: .35em .625em .75em
+    }
+
+    legend {
+        border: 0;
+        padding: 0;
+        white-space: normal;
+        *margin-left: -7px
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 100%;
+        margin: 0;
+        vertical-align: baseline;
+        *vertical-align: middle
+    }
+
+    button,
+    input {
+        line-height: normal
+    }
+
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        cursor: pointer;
+        -webkit-appearance: button;
+        *overflow: visible
+    }
+
+    button[disabled],
+    input[disabled] {
+        cursor: default
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+        *height: 13px;
+        *width: 13px
+    }
+
+    input[type="search"] {
+        -webkit-appearance: textfield;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box
+    }
+
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button {
+        -webkit-appearance: none
+    }
+
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0
+    }
+
+    textarea {
+        overflow: auto;
+        vertical-align: top
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    body {
+        background: #F9F9F9;
+        font-size: 0.9em;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 100px;
     }
 
     em {
-        color: #95a5a6;
-        font-weight: normal;
-        font-style: normal;
+        color: #999;
     }
 
-    h4 span:first-child {
-        color: #000;
-        font-weight: bold;
+    p {
+        line-height: 1.4;
+    }
+
+    a {
+        color: #31A6D6;
+    }
+
+    a:visited {
+        color: #3061A5;
+    }
+
+    a:hover {
+        color: #3061A5;
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    section {
+        margin-bottom: 2em;
+    }
+
+    blockquote {
+        margin: 0;
+        margin-bottom: 1em;
+    }
+
+    header {
+        background: #68B6E3;
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+
+    header h1 {
+        color: #FFFFFF;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    header h2 {
+        color: #F3F3F3;
+        font-size: 1em;
+        max-width: 700px;
+        margin: 0 auto;
     }
 
     .container {
-        max-width: 750px;
-        padding: 0 30px;
+        max-width: 700px;
+        padding: 0 50px;
+        margin: 0 auto;
     }
 
-    .col-sm-6 {
+    #basics {
+        margin-bottom: 10px;
+        border-top: 1px #E2E2E2 solid;
+        border-bottom: 1px #E2E2E2 solid;
+    }
+
+    #basics h3 {
+        margin-top: 1.5em;
         margin-bottom: 10px;
     }
 
-    .col-sm-12 h4 {
-        margin-top: 12px;
+    #basics .contact strong {
+        line-height: 1.3;
+        float: left;
+        width: 80px;
     }
 
-    .col-sm-12+.col-sm-12 {
-        margin-top: 30px;
+    .contact h3 {
+        padding-bottom: 10px;
     }
 
-    #header {
-        background: #f4f6f6;
-        padding: 50px 0;
-        margin-bottom: 30px;
+    .website,
+    .email,
+    .phone {
+        margin-bottom: 10px;
+        float: left;
+        width: 50%;
     }
 
-    #header h2 {
-        color: #95a5a6;
-        font-size: 24px;
+    .summary {
+        padding-top: 5px;
+        clear: both;
     }
 
-    #content h3 {
-        color: #f1c40f;
-        font-size: 26px;
-        margin-top: -4px;
+    #profiles {
+        overflow: hidden;
     }
 
-    #content aside {
-        text-align: right;
-        padding-right: 30px;
+    #profiles .item {
+        float: left;
+        width: 50%;
     }
 
-    #profiles .network {
-        text-transform: capitalize;
+    .username {
+        margin-top: 10px;
     }
 
-    #work .position,
-    #volunteer .position {
-        font-weight: bold;
-        margin-bottom: 8px;
+    .work_date,
+    .work_position,
+    .work_website,
+    .institution,
+    .study_date,
+    .qualification {
+        margin-bottom: 10px;
+        float: left;
+        width: 30%;
     }
 
-    #education .area {
-        font-weight: bold;
+    .courses {
+        clear: both;
     }
 
-    #education .area:before {
-        content: "\f0d7";
-        font: 16px Octicons;
-        margin-right: 6px;
+    .dissertation {
+        margin-top: 10px;
     }
 
-    #education .studyType {
-        margin-left: 25px;
+    #work,
+    #volunteer {
+        padding-bottom: 5px;
+        border-bottom: 1px #E2E2E2 solid;
     }
 
-    #awards .summary,
-    #publications .summary {
-        margin-top: 8px;
+    #work .item,
+    #volunteer .item {
+        margin: 25px 0;
     }
 
-    #publications .website a:before {
-        content: attr(href);
+    #skills {
+        margin-bottom: 10px;
+        border-bottom: 1px #E2E2E2 solid;
+        padding-bottom: 5px;
     }
 
-    @media (min-width: 480px) {
-        .strike-through {
-            border-top: 1px solid #f4f6f6;
-            height: 20px;
-            margin-top: 12px;
-            margin-bottom: -2px;
-            position: relative;
-        }
-        .strike-through span,
-        .strike-through a {
-            background: #fff;
-            position: absolute;
-        }
-        .strike-through span:first-child {
-            padding-right: 20px;
-            margin-top: -12px;
-        }
-        .strike-through span+span {
-            font-size: 14px;
-            margin-top: -10px;
-            padding-left: 20px;
-            right: 0;
-        }
+    #skills .item,
+    #languages .item {
+        margin: 0 0 25px 0;
     }
 
-    @media (max-width: 768px) {
-        .col-sm-6:last-child {
-            margin-bottom: 0px;
-        }
-        #content aside {
-            margin-bottom: 20px;
-            padding-right: 0;
-            text-align: left;
-        }
-        #publications .website a:before {
-            content: "View publication";
-        }
+    #interests .item {
+        margin-bottom: 25px;
     }
 
-    @media (max-width: 480px) {
-        h1 {
-            font-size: 26px;
-        }
-        .date {
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-        .strike-through span:first-child {
-            margin-bottom: 7px;
-        }
-        .strike-through span {
-            display: block;
-        }
-        #header {
-            margin-bottom: 10px;
-            padding: 40px 0;
-        }
-        #actions {
-            display: none;
-        }
+    #skills {
+        overflow: hidden;
+    }
+
+    #languages .item,
+    #interests .item,
+    #skills .item {
+        float: left;
+        width: 50%;
+    }
+
+    #references,
+    #interests {
+        clear: both;
     }
     </style>
 </head>
 
 <body>
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-9 col-sm-push-3">
-                    <h1>
-KHOI NGUYEN
-</h1>
-                    <h2>
-Back-End Developer
-</h2>
-                </div>
-            </div>
-        </div>
+    <header>
+        <h1>KHOI NGUYEN</h1>
+        <h2>Back-End Developer</h2>
     </header>
     <div id="content" class="container">
-        <section id="contact" class="row">
-            <aside class="col-sm-3">
+        <section id="basics">
+            <div class="contact">
                 <h3>Contact</h3>
-            </aside>
-            <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <strong>Email</strong>
-                        <div class="email">nguyenminhkhoi.pr@gmail.com</div>
-                    </div>
-                    <div class="col-sm-6">
-                        <strong>Phone</strong>
-                        <div class="phone">+84 933 318 602</div>
-                    </div>
+                <div class="email">
+                    <strong>Email</strong> nguyemminhkhoi.pr@gmail.com
+                </div>
+                <div class="phone">
+                    <strong>Phone</strong> +84 933 318 602
                 </div>
             </div>
-        </section>
-        <section id="about" class="row">
-            <aside class="col-sm-3">
+            <div class="summary">
                 <h3>About</h3>
-            </aside>
-            <div class="col-sm-9">
                 <p>I am a hard-working and well-organized individual who always wants to get the work done on time with high quality. I eager to learn, overcome challenges to improve my technical as well as communication skills. Like most of technicians, I always love technology and try to apply them to make life better.</p>
             </div>
         </section>
-        <section id="work" class="row">
-            <aside class="col-sm-3">
-                <h3>Work</h3>
-            </aside>
-            <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 class="strike-through">
-<span>Silicon Straits Saigon</span>
-<span class="date">
-April 2016 — Present
-</span>
-</h4>
-                        <div class="website pull-right">
-                            <a href="http://siliconstraits.com">http://siliconstraits.com</a>
-                        </div>
-                        <div class="position">
-                            Back End Developer
-                        </div>
-                        <div class="summary">
-                            <p>Develop and guarantee high availability, performance and scalability of systems.</p>
-                        </div>
-                        <h4>Highlights</h4>
-                        <ul class="highlights">
-                            <li class="bullet">Apply microservice architecture with Golang, Kafka</li>
-                            <li class="bullet">Experience CI/CD flow using Gitlab, Docker, Jenskin and Rancher</li>
-                            <li class="bullet">Get familiar with agile development</li>
-                            <li class="bullet">Work under high pressure</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-12">
-                        <h4 class="strike-through">
-<span>Liti Solutions</span>
-<span class="date">
-January 2015 — December 2015
-</span>
-</h4>
-                        <div class="website pull-right">
-                            <a href=""></a>
-                        </div>
-                        <div class="position">
-                            Full Stack Developer
-                        </div>
-                        <div class="summary">
-                            <p>Implement and maintain web applications</p>
-                        </div>
-                        <h4>Highlights</h4>
-                        <ul class="highlights">
-                            <li class="bullet">Keep up with new technology like Golang, Postgres, MongoDB, RethinkDB</li>
-                            <li class="bullet">Standardize coding and working style</li>
-                            <li class="bullet">Enjoy start-up life</li>
-                        </ul>
-                    </div>
+        <section id="work">
+            <h2>Work</h2>
+            <div class="item">
+                <h3 class="work_name">
+Silicon Straits Saigon
+</h3>
+                <div class="work_position">
+                    Back End Developer
                 </div>
+                <div class="work_date">
+                    <span class="startDate">
+April 2016
+</span>
+                    <span class="endDate">
+- Present
+</span>
+                </div>
+                <div class="work_website">
+                    <a href="http://siliconstraits.com">http://siliconstraits.com</a>
+                </div>
+                <div class="summary">
+                    <p>Develop and guarantee high availability, performance and scalability of systems.</p>
+                </div>
+                <ul class="highlights">
+                    <li>Apply microservice architecture with Golang, Kafka</li>
+                    <li>Experience CI/CD flow using Gitlab, Docker, Jenskin and Rancher</li>
+                    <li>Get familiar with agile development</li>
+                    <li>Work under high pressure</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3 class="work_name">
+Liti Solutions
+</h3>
+                <div class="work_position">
+                    Full Stack Developer
+                </div>
+                <div class="work_date">
+                    <span class="startDate">
+January 2015
+</span>
+                    <span class="endDate">
+- December 2015
+</span>
+                </div>
+                <div class="summary">
+                    <p>Implement and maintain web applications</p>
+                </div>
+                <ul class="highlights">
+                    <li>Keep up with new technology like Golang, Postgres, MongoDB, RethinkDB</li>
+                    <li>Standardize coding and working style</li>
+                    <li>Enjoy start-up life</li>
+                </ul>
             </div>
         </section>
-        <section id="volunteer" class="row">
-            <aside class="col-sm-3">
-                <h3>Volunteer</h3>
-            </aside>
-            <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 class="strike-through">
-<span>BKIT4U</span>
-<span class="date">
-—
-</span>
-</h4>
-                        <div class="website pull-right">
-                            <a href=""></a>
-                        </div>
-                        <div class="position">
-                            Bombi Robocon Team
-                        </div>
-                        <div class="summary">
-                            <p>Attend Robocon 2012</p>
-                        </div>
-                        <h4>Highlights</h4>
-                        <ul class="highlights">
-                            <li class="bullet">Learn how to make a robot from scratch</li>
-                            <li class="bullet">Experience teamworking</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-12">
-                        <h4 class="strike-through">
-<span>Margroup UEH</span>
-<span class="date">
-—
-</span>
-</h4>
-                        <div class="website pull-right">
-                            <a href=""></a>
-                        </div>
-                        <div class="position">
-                            PR Department
-                        </div>
-                        <div class="summary">
-                            <p>Fund-raise and advertise for events of group</p>
-                        </div>
-                        <h4>Highlights</h4>
-                        <ul class="highlights">
-                            <li class="bullet">Experience process to organize an event</li>
-                            <li class="bullet">Have fun</li>
-                        </ul>
-                    </div>
+        <section id="volunteer">
+            <h2>Volunteer</h2>
+            <div class="item">
+                <h3 class="company">
+BKIT4U
+</h3>
+                <div class="work_position">
+                    Bombi Robocon Team
                 </div>
+                <div class="summary">
+                    <p>Attend Robocon 2012</p>
+                </div>
+                <ul class="highlights">
+                    <li>Learn how to make a robot from scratch</li>
+                    <li>Experience teamworking</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3 class="company">
+Margroup UEH
+</h3>
+                <div class="work_position">
+                    PR Department
+                </div>
+                <div class="summary">
+                    <p>Fund-raise and advertise for events of group</p>
+                </div>
+                <ul class="highlights">
+                    <li>Experience process to organize an event</li>
+                    <li>Have fun</li>
+                </ul>
             </div>
         </section>
-        <section id="education" class="row">
-            <aside class="col-sm-3">
-                <h3>Education</h3>
-            </aside>
-            <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 class="strike-through">
-<span>HCMC University of Technology</span>
-<span class="date">
-September 2010 — April 2015
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <div class="institution">
+                    HCMC University of Technology
+                </div>
+                <div class="study_date">
+                    <span class="startDate">
+September 2010
 </span>
-</h4>
-                        <div class="area">
-                            Computer Science
-                        </div>
-                        <div class="studyType">
-                            Engineering
-                        </div>
-                        <h4>Courses</h4>
-                        <ul class="courses">
-                            <li>Data Structure and Algorithm</li>
-                            <li>Introduction to Database</li>
-                            <li>Machine Learning</li>
-                            <li>Data Mining</li>
-                        </ul>
-                    </div>
+                    <span class="endDate">
+- April 2015
+</span>
                 </div>
+                <ul class="courses">
+                    <li>Data Structure and Algorithm</li>
+                    <li>Introduction to Database</li>
+                    <li>Machine Learning</li>
+                    <li>Data Mining</li>
+                </ul>
             </div>
         </section>
-        <section id="skills" class="row">
-            <aside class="col-sm-3">
-                <h3>Skills</h3>
-            </aside>
-            <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="name">
-                            <h4>Technical</h4>
-                        </div>
-                        <ul class="keywords">
-                            <li>Object Oriented Design</li>
-                            <li>Microservice Architecture</li>
-                            <li>Unit Testing</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="name">
-                            <h4>Process</h4>
-                        </div>
-                        <ul class="keywords">
-                            <li>Continuos Development</li>
-                            <li>Test Driven Development</li>
-                        </ul>
-                    </div>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="item">
+                <div class="name">
+                    Technical
                 </div>
+                <ul class="keywords">
+                    <li>Object Oriented Design</li>
+                    <li>Microservice Architecture</li>
+                    <li>Unit Testing</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="name">
+                    Process
+                </div>
+                <ul class="keywords">
+                    <li>Continuos Development</li>
+                    <li>Test Driven Development</li>
+                </ul>
             </div>
         </section>
-        <section id="languages" class="row">
-            <aside class="col-sm-3">
-                <h3>Languages</h3>
-            </aside>
-            <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="language">
-                            <strong>English</strong>
-                        </div>
-                        <div class="fluency">
-                            TOEFL iBT - 85
-                        </div>
-                    </div>
+        <section id="languages">
+            <h2>Languages</h2>
+            <div class="item">
+                <div class="language">
+                    English
+                </div>
+                <div class="level">
+                    <em>TOEFL iBT - 85</em>
                 </div>
             </div>
         </section>
